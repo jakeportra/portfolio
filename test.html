@@ -32,20 +32,20 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right" style="margin-right: 10px;">
         <li><a href="#intro">Meet Jake</a></li>
-        <li><a href="#comp">Summary</a></li>
-        <li><a href="#pre">Resume</a></li>
+        <!-- <li><a href="#comp">Summary</a></li> -->
+        <!-- <li><a href="#pre">Resume</a></li> -->
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">CLASSIFIERS
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resume
           <span class="caret"></span></a>
           <ul id="subnav" class="dropdown-menu">
-            <li><a href="#log"></a></li>
+            <!-- <li><a href="#log"></a></li> -->
             <li><a href="#svm">Technical Skills</a></li>
             <li><a href="#dt">Projects</a></li> 
             <li><a href="#rf">Experience</a></li> 
             <li><a href="#knn">Education</a></li> 
           </ul>
         </li>
-        <li><a href="#summ">SUMMARY</a></li>
+        <li><a href="#summ">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -53,19 +53,22 @@
 
 <div class="jumbotron text-center">
   <h1>Jacob W. Portra</h1> 
-  <p>Business/Data Analyst with experience in business administration and small business management.</p> 
 </div>
 
-<!-- Container (Introduction Section) -->
+<!-- Container (Meet Jake) -->
 <div id="intro" class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
-      <h2>INTRODUCTION</h2><br>
-      <h4>Analyzing and presenting data from a dataset sourced from the Breast Cancer Wisconsin (diagnostic) data set.</h4><br>
+      <h2>Meet Jake</h2><br>
+      <h4>Business/Data Analyst with experience in 
+        business administration and small business management.</h4><br>
       <p>
-        The models we ran include Logistic Regression (Yee Mun Chan), Support Vector Machine (Jake Portra), Decision tree algorithm (Enrique Saenger), Random Forest Classification (Molly McCarthy), K nearest neighbor (Enrique Saenger), Sequential model (Ashwin Patel)
-The task was to see if any one model was better at predicting malignancy in tumors that any other model.
-Our belief was that using a neural network would provide optimal results, but it was still important to compare it to machine learning classifiers due to their simplicity.
+        Business Analyst with a B.S. in Entrepreneurial Management and a certificate in Data Analytics & Visualization 
+        from the University of Minnesota and 4 years of experience in business administration and small business management. 
+        Uses acquired skills in Excel, Python, SQL, Javascript, and other tools to solve complex problems and satisfy curious 
+        nature. Demonstrated ability to develop processes that improve efficiency, saving time and money for the organization. 
+        Experience interacting with both clients and coworkers. Thrives in organizations that value communication and constant 
+        improvement for both individuals and the organization. 
 
       </p>
     </div>
@@ -73,7 +76,7 @@ Our belief was that using a neural network would provide optimal results, but it
 </div>
 
 <!-- Container (Preliminary Analysis Section) -->
-<div id="pre" class="container-fluid bg-grey">
+<!-- <div id="pre" class="container-fluid bg-grey">
   <div class="row">
     <div class="col-sm-8">
       <h2>PRELIMINARY ANALYSIS</h2><br>
@@ -99,10 +102,10 @@ Our belief was that using a neural network would provide optimal results, but it
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Container (Logistic Regression Section) -->
-<div id="log" class="container-fluid">
+<!-- <div id="log" class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
       <h2>LOGISTIC REGRESSION</h2><br>
@@ -128,22 +131,23 @@ Our belief was that using a neural network would provide optimal results, but it
       <img id="plot" src="/Resources/Results/Logistic Regression2.jpg" alt="Logistic Regression 2">
     </div>
   </div>
-</div>
+</div> -->
 
-<!-- Container (Support Vector Machine Section) -->
+<!-- Container (Technical Skills) -->
 <div id="svm" class="container-fluid bg-grey">
   <div class="row">
     <div class="col-sm-12">
-      <h2>SUPPORT VECTOR MACHINE</h2><br>
-      <h4>Support Vector Machine is another supervised learning model that we tested. Although we used SVM for linear classification, it can be used for non-linear classification 
-        as well.</h4><br>
+      <h2>Technical Skills</h2><br>
+      <h4>Tools: Python, Pandas, MS Excel, JavaScript, VBA<br>
+        Databases: SQL 
+        <!-- </h4><br>
       <p>It is worthy to mention that SVM model may exhibit very similar results compared to Logistic Regression model. This can happen when using SVM for linear classification. 
         As Chandrima D. from Nihilent Analytics Ltd. explains, "If your data is linearly separable...then using SVM with linear kernel will yield pretty much [the] same 
         accuracy as using L2-regularized logistic regression. The reason is: both of them use almost similar loss functions." To learn more, check out 
         <a href="https://www.quora.com/Can-logistic-regression-and-SVM-give-the-same-accuracy-when-using-the-same-training-test-set-If-so-why" target="_blank">
         Chandrima's explanation</a>.</p><br>
       <p>The overall accuracy of this model is 94%. There are 11 inaccurate predictions (6%), with 5 FP and 6 FN. The area under the ROC curve (AUC) is .94. The SVM Model also does a 
-        pretty good job in predicting malignant tumors.</p><br>
+        pretty good job in predicting malignant tumors.</p><br> -->
     </div>
   </div>
   <div class="row">
@@ -158,19 +162,31 @@ Our belief was that using a neural network would provide optimal results, but it
   </div>
 </div>
 
-<!-- Container (Decision Tree Section) -->
+<!-- Container (Projects) -->
 <div id="dt" class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
-      <h2>DECISION TREE</h2><br>
-      <h4>Among our several other classifiers we chose to make a model using a decision tree. A decision tree is a simple yet powerful classifier with strong predictive potential.</h4><br>
-      <p>By combining several of these yes/no decisions, a giant tree is formed though a supervised machine learning model where the data is split according to a certain 
-        parameter. By splitting our dataset (in which we already know the outcome) we can create two separate volumes of data so that we can see how accurately our model is 
-        predicting the data. Additionally, we can see how often the model is making mistakes and even if that mistake was a false positive or a false negative. The results of 
-        this analysis are shown below.</p><br>
-      <p>The overall accuracy of the Decision Tree model is 90%. There are 19 inaccurate predictions (10%), with 12 FP and 7 FN. The area under the ROC curve (AUC) is .89. 
-        Although the model does not have as high accuracy as other models, it still does a good job in predicting malignant tumors. Despite having more inaccurate predictions, 
-        it is worthy to point out that the model predicts less FN (i.e., predicting a tumor is benign when it is malignant).</p><br>
+      <h2>Projects</h2><br>
+      <h4>World Alcohol Consumption</h4><br>
+      <ul>
+        <li>This project visualizes alcohol consumption by country, based on a 2010 WHO study.</li>
+        <li>Used JS to visualize data on a website, got the data from a SQLite database using a Flask server</li>
+        <li>Python, Flask, ETL, SQLite, Javascript (Leaflet, Chart.js), CSS, HTML</li>
+      </ul><br>
+      <h4>Breast Cancer Detection</h4><br>
+      <ul>
+        <li>This project compared the accuracy of several different machine learning models in predicting if an existing 
+          tumor was malignant or benign.</li>
+        <li>Created Support Vector Machine model, charted the results, wrote the model analysis</li>
+        <li>Python (Matplotlib, scikit-learn), HTML</li>
+      </ul><br>
+      <h4>Happiness at Work</h4>
+      <ul>
+        <li>For each country studied, this project examined the relationship between working conditions and World Happiness 
+          Index score.</li>
+        <li>Examined how World Happiness Score was affected by income and poverty rate</li>
+        <li>Python (Matplotlib, Pandas)</li>
+      </ul><br>
     </div>
   </div>
   <div class="row">
@@ -185,23 +201,49 @@ Our belief was that using a neural network would provide optimal results, but it
   </div>
 </div>
 
-<!-- Container (Random Forest Section) -->
+<!-- Container (Experience) -->
 <div id="rf" class="container-fluid bg-grey">
   <div class="row">
     <div class="col-sm-12">
-      <h2>RANDOM FOREST</h2><br>
-      <h4>It is an ensemble tree-based learning algorithm. The Random
-        Forest Classifier is a set of decision trees from randomly selected
-        subset of training set. It aggregates the votes from different
-        decision trees to decide the final class of the test object.</h4><br>
-      <p>Ensemble algorithms are those which combines more than
-        one algorithms of same or different kind for classifying
-        objects. For example, running prediction over Naive Bayes, SVM
-        and Decision Tree and then taking vote for final consideration of
-        class for test object.</p><br>
-      <p>The overall accuracy of the Random Forest model is 94.2%. There are 11 inaccurate predictions (6%), with 5 FP and 6 FN. The area under the ROC curve (AUC) is .94. 
-        Similar to the SVM model, Random Forest predicts more FN than FP. Per the overall model accuracy and AUC scores, Random Forest does a good job in predicting 
-      breast cancer.</p><br>
+      <h2>Experience</h2><br>
+      <h4>Business Operations Specialist | Come, Sit, Stay LLC | 2019-2020 | Minneapolis, MN</h4>
+      <p>Took ownership of essential daily activities including recording payments and bank data, monitoring employee 
+        expenses, and following up with clients about overdue invoices. Provided services, employee support, and customer 
+        service in both the field and office. Independently completed projects involving research and data entry.
+      </p>
+      <h5>Key Accomplishments:</h5>
+      <ul>
+        <li>Successfully implemented multiple new digital platforms and work processes</li>
+        <li>Achieved zero carryover of overdue client invoices to the next month for the first time in company’s 10-year 
+          history</li>
+      </ul><br>
+      <h4>Business Operations Specialist | North American Art Publishing | 2018-2019 | Saint Paul, MN</h4>
+      <p>Managed relationships with our ecommerce partners. Processed orders from ecommerce sales channels. Responded to 
+        order inquiries from partners and clients. Ensured timely completion of orders by communicating with the production
+         team. Evaluated existing office procedures and redesigned them when necessary to improve efficiency.
+      </p>
+      <h5>Key Accomplishments:</h5>
+      <ul>
+        <li>Successfully helped guide company through acquisition and restructuring</li>
+        <li>Drastically reduced labor hours needed to manage online orders</li>
+      </ul><br>
+      <h4>Direct Import Coordinator | Richard's Homewares, Inc. | 2017-2018 | Portland, OR</h4>
+      <p>Communicated orders from sales reps and buyers to respective factories, verifying accuracy of information and 
+        correcting errors. Documented sales and expense data for managerial review. Actively ensured shipments were 
+        executed on time by maintaining constant communication with factories and completing documentation. Created and 
+        updated product offerings in ERP and DBMS systems for ordering and tracking.
+      </p><br>
+      <h4>Co-Founder | Nesel Packs, LLC | 2015-2016 | Minneapolis, MN</h4>
+      <p>Designed the world’s first backpack specialized for people with Sensory Processing Disorders. Cultivated 
+        relationships with suppliers and partner organizations. Received mentorship from Target Corp. as  the first member 
+        of their Skills-Based Volunteering program.
+      </p>
+      <h5>Key Accomplishments:</h5>
+      <ul>
+        <li>Exceeded our $10,000 funding goal on Kickstarter by raising over $35,000</li>
+        <li>Placed 2nd in our division out of 188 applicants in the 2016 MN Cup start-up competition</li>
+      </ul>
+
     </div>
   </div>
   <div class="row">
@@ -216,15 +258,15 @@ Our belief was that using a neural network would provide optimal results, but it
   </div>
 </div>
 
-<!-- Container (K Nearest Neighbor Section) -->
+<!-- Container (Education) -->
 <div id="knn" class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
-      <h2>K NEAREST NEIGHBOR</h2><br>
-      <h4>Another classifier that was worth considering in our analysis was K Nearest Neighbor.</h4><br>
-      <p>Even though finding the proper k value can be a challenge, in the search of an over-predicting model it was a useful tool. In our testing, we found that using a 
-        k value of 3 allowed for an accuracy of 94.7% while maintaining a rate of just over 3% false negatives. Overall this classifier does quite a good job of predicting malignancy in tumors, but there may be better options.</p><br>
-      <p>The plots below show this classifier's results using a k of 3.</p><br>
+      <h2>Education</h2><br>
+      <h4>Data Analysis & Visualization Certificate | University of Minnesota | Saint Paul, MN</h4>
+      <p>A 24-week intensive program focused on gaining technical programming skills in Excel, VBA, Python, R, JavaScript, 
+        SQL Databases, Tableau, Big Data, and Machine Learning.</p><br>
+      <h4>Bachelor of Science in Business | Carlson School of Management | Minneapolis, MN</h4>
     </div>
   </div>
   <div class="row">
@@ -240,7 +282,7 @@ Our belief was that using a neural network would provide optimal results, but it
 </div>
 
 <!-- Container (Sequential Section) -->
-<div id="seq" class="container-fluid bg-grey">
+<!-- <div id="seq" class="container-fluid bg-grey">
   <div class="row">
     <div class="col-sm-12">
       <h2>SEQUENTIAL NEURAL NETWORK</h2><br>
@@ -266,7 +308,7 @@ Our belief was that using a neural network would provide optimal results, but it
   </div>
 </div>
 
-<!-- Container (Comparison Section) -->
+Container (Comparison Section) 
 <div id="comp" class="container-fluid">
   <div class="row">
     <div class="col-sm-4">
@@ -302,33 +344,18 @@ Our belief was that using a neural network would provide optimal results, but it
       <img id="rightImg1" src="/Resources/Results/Logistic Regression.jpg" width="525" height="350"><br><br>
     </div>
   </div>
-</div>
+</div> -->
 
-<!-- Container (SUMMARY Section) -->
+<!-- Container (Contact Section) -->
 <div id="summ" class="container-fluid bg-grey">
   <div class="row">
     <div class="col-sm-12">
-      <h2>SUMMARY</h2><br>
-      <h4>Performance Metrics</h4><br>
-      <p>Now that we have run several classification models, how should we determine which is the better model in predicting the malignancy of a tumor? There are a 
-        few metrics that we can use in determining the performance of our models. They are:</p>
-        <ol>
-          <li><strong>Classification accuracy</strong> - this is most common method in evaluating the performance of the classification models</li>
-          <li><strong>Logarithmic loss (Logloss)</strong> - this is a probability-based mechanism, measuring the classifier’s confidence in predicting accuracy 
-            (i.e., a score of 0 indicates no confidence classifier’s ability to achieve prediction while a score of 1 indicates complete confidence that the classifier 
-            would achieve its prediction)</li>
-          <li><strong>AUC - Area Under ROC Curve</strong> - this method informs us on a classifier’s ability to distinguish between classes. The higher the AUC, the better 
-            it is in predicting our binary classes (e.g., benign or malignant)</li>
-          <li><strong>Confusion matrix</strong> - this method evaluates the performance of the classifier graphically with a table, matrix or chart with 4 different 
-            combinations of predicted and actual values</li>
-          <li><strong>Classification report</strong> - this performance measurement metric makes use of terms such as precision, recall, and f-1 score. Please refer to 
-            <a href="https://towardsdatascience.com/understanding-confusion-matrix-a9ad42dcfd62" target="_blank">Understanding Confusion Matrix by Narkhede</a> to learn more about these terms</li>
-        </ol>
-      <br><br>
-      <h4>Conclusion</h4>
-      <p>We have looked into a few of these accuracy metrics when deciding the better model in predicting whether a breast cancer tumor is benign or malignant. Overall, 
-        the model accuracy observed across the different models is high and similar to each other with both Sequential Model and Logistic Regression scoring the highest 
-        overall accuracy (.96) followed by KNN (.95). Decision tree has the lowest accuracy at .90.</p><br>
+      <h2>Contact</h2><br>
+        <ul>
+          <li><strong>LinkedIn</strong></li>
+          <li><strong>Github</strong></li>
+          <li><strong>Email</strong></li>
+        </ul>
     </div>
   <div class="row">
     <div class="col-sm-2"></div>
